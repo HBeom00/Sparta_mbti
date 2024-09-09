@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import { AuthContext } from "../context/AuthContext";
+import { authLogin, authRegister } from "../api/auth";
 
 const AuthForm = ({ mode }) => {
   const [userId, setUserId] = useState("");
@@ -14,15 +14,20 @@ const AuthForm = ({ mode }) => {
   const handleSubmitLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        "https://moneyfulpublicpolicy.co.kr/login",
-        {
-          id: userId,
-          password: userPw,
-        }
-      );
-      if (response.data.success) {
-        login(response.data.accessToken);
+      // const response = await axios.post(
+      //   "https://moneyfulpublicpolicy.co.kr/login",
+      //   {
+      //     id: userId,
+      //     password: userPw,
+      //   }
+      // );
+      const response = await authLogin({
+        id: userId,
+        password: userPw,
+      });
+
+      if (response.success) {
+        login(response.accessToken);
         navigate("/");
       }
     } catch (error) {
@@ -35,17 +40,22 @@ const AuthForm = ({ mode }) => {
   const handleSubmitSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        "https://moneyfulpublicpolicy.co.kr/register",
-        {
-          id: userId,
-          password: userPw,
-          nickname: nickName,
-        }
-      );
+      // const response = await axios.post(
+      //   "https://moneyfulpublicpolicy.co.kr/register",
+      //   {
+      //     id: userId,
+      //     password: userPw,
+      //     nickname: nickName,
+      //   }
+      // );
+      const response = await authRegister({
+        id: userId,
+        password: userPw,
+        nickname: nickName,
+      });
 
-      if (response.data.success) {
-        alert(response.data.message);
+      if (response.success) {
+        alert(response.message);
         navigate("/login");
       } else alert("회원가입 실패");
 
