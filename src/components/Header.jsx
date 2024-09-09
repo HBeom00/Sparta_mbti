@@ -15,28 +15,16 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <div className="bg-red-200 h-14">
       {!isAuthenticated ? (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
+        <div className="flex justify-between items-center h-full px-10">
           <Link to={"/"}>홈</Link>
           <Link to={"/login"}>로그인</Link>
         </div>
       ) : (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
+        <div className="flex justify-between items-center h-full px-10">
           <Link to={"/"}>홈</Link>
-          <div style={{ display: "flex", gap: "20px" }}>
+          <div className="flex gap-12">
             <Link to={"/profile"}>프로필</Link>
             <Link to={"/test"}>테스트</Link>
             <Link to={"/result"}>결과보기</Link>
