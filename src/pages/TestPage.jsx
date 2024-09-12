@@ -4,7 +4,7 @@ import TestForm from "../components/TestForm";
 import { calculateMBTI } from "../utils/mbtiCalculator";
 import { useNavigate } from "react-router-dom";
 import { getUserProfile } from "../api/auth";
-import API_URL from "../api/testResult.js";
+import { API_URL } from "../api/testResult.js";
 
 const Test = () => {
   const navigate = useNavigate();
