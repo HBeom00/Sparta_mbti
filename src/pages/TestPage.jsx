@@ -31,7 +31,7 @@ const Test = () => {
     };
     // await createTestResult(resultData);
     const response = await axios.post(
-      "http://localhost:5000/testResults",
+      import.meta.env.VITE_MBTI_URL,
       resultData
     );
     console.log(response, "response 확인");
