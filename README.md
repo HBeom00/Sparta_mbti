@@ -1,8 +1,79 @@
-# React + Vite
+# MBTI TEST
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>나의 mbti는? mbti를 확인할 수 있는 사이트 구현!!</p>
+( 개인 일정으로 css 적용과 코드 리팩토링 과정은 진행하지 못하였습니다...ㅜㅜ)
 
-Currently, two official plugins are available:
+<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🔥 목표
+
+<div>1️⃣ JWT 인증 방식으로 로그인, 회원가입 로직 구현 ⭕</div>
+<div>2️⃣ tanstack query 이해 및 사용해보기 ⭕</div>
+<div>3️⃣ tailwind 사용해보기 ❌ ( 다음에 꼭 사용해보기!!!)</div>
+
+<br>
+
+# ⌛ 작업 기간
+
+➡️ 24.09.06 ~ 24.09.09
+
+<br>
+
+# 🔗 배포 링크
+
+➡️ 배포중
+
+<br>
+
+# 📂 파일 구조
+
+    📦src
+    ┣ 📂api
+    ┃ ┣ 📜auth.js
+    ┃ ┗ 📜testResult.js
+    ┣ 📂assets
+    ┃ ┗ 📜react.svg
+    ┣ 📂components
+    ┃ ┣ 📜AuthForm.jsx
+    ┃ ┣ 📜Header.jsx
+    ┃ ┣ 📜ProtectedRoute.jsx
+    ┃ ┣ 📜TestForm.jsx
+    ┃ ┣ 📜TestResultItem.jsx
+    ┃ ┗ 📜TestResultList.jsx
+    ┣ 📂context
+    ┃ ┗ 📜AuthContext.jsx
+    ┣ 📂data
+    ┃ ┗ 📜questions.js
+    ┣ 📂pages
+    ┃ ┣ 📜Home.jsx
+    ┃ ┣ 📜Login.jsx
+    ┃ ┣ 📜Profile.jsx
+    ┃ ┣ 📜Signup.jsx
+    ┃ ┣ 📜TestPage.jsx
+    ┃ ┗ 📜TestResultPage.jsx
+    ┣ 📂router
+    ┃ ┗ 📜Router.jsx
+    ┣ 📂utils
+    ┃ ┗ 📜mbtiCalculator.jsx
+    ┣ 📜App.css
+    ┣ 📜App.jsx
+    ┣ 📜index.css
+    ┣ 📜main.jsx
+    ┗ 📜reset.css
+
+# 🛠️ 기술 스택
+
+<div style="margin: ; text-align: left;" "text-align: left;"> 
+    <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white">
+    <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
+    <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white">
+    <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white">
+    <img src="https://img.shields.io/badge/React Query-FF4154?style=for-the-badge&logo=React Query&logoColor=white">
+    <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=Vercel&logoColor=white">
+</div>
+
+<br>
+
+# 🧑‍💻 개발 블로그
+
+<div style="text-align: left;"> <a href=https://velog.io/@hbeom00> <img src="https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=Velog&logoColor=white&link=https://velog.io/@hbeom00"> </a></div>
