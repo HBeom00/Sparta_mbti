@@ -7,9 +7,9 @@
 
 # 🔥 목표
 
-<div>1️⃣ JWT 인증 방식으로 로그인, 회원가입 로직 구현 ⭕</div>
-<div>2️⃣ tanstack query 이해 및 사용해보기 ⭕</div>
-<div>3️⃣ tailwind 사용해보기 ❌ ( 다음에 꼭 사용해보기!!!)</div>
+<div> 1️. JWT 인증 방식으로 로그인, 회원가입 로직 구현 ⭕</div>
+<div> 2️. tanstack query 이해 및 사용해보기 ⭕</div>
+<div> 3️. tailwind 사용해보기 ❌ ( 다음에 꼭 사용해보기!!!)</div>
 
 <br>
 
@@ -21,7 +21,7 @@
 
 # 🔗 배포 링크
 
-➡️ 배포중
+➡️ URL: https://sparta-mbti-3ptph2b27-heebeoms-projects-028cd87b.vercel.app/
 
 <br>
 
