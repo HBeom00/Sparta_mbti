@@ -21,7 +21,7 @@
 
 # 🔗 배포 링크
 
-➡️ URL: https://sparta-mbti-3ptph2b27-heebeoms-projects-028cd87b.vercel.app/
+➡️ URL: [https://sparta-mbti-3ptph2b27-heebeoms-projects-028cd87b.vercel.app/](https://sparta-mbti.vercel.app/)
 
 <br>
 
