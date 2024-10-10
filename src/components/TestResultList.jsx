@@ -34,7 +34,7 @@ const TestResultList = () => {
     },
   });
 
-  if (isPending) return <div>~로딩중 입니다.</div>;
+  if (isPending) return <div>로딩중 입니다.</div>;
   if (isError) return <div>로딩중 에러가 발견되었습니다.</div>;
 
   // 유저 정보 가져오기

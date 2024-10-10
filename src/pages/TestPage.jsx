@@ -4,7 +4,6 @@ import TestForm from "../components/TestForm";
 import { calculateMBTI } from "../utils/mbtiCalculator";
 import { useNavigate } from "react-router-dom";
 import { getUserProfile } from "../api/auth";
-import { API_URL } from "../api/testResult.js";
 
 const Test = () => {
   const navigate = useNavigate();
@@ -31,7 +30,10 @@ const Test = () => {
       visibility: true,
     };
     // await createTestResult(resultData);
-    const response = await axios.post(API_URL, resultData);
+    const response = await axios.post(
+      import.meta.env.VITE_MBTI_URL,
+      resultData
+    );
     console.log(response, "response 확인");
     navigate("/result");
   };

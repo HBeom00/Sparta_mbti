@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://moneyfulpublicpolicy.co.kr";
+const API_URL = import.meta.env.VITE_AUTH_URL;
 
 // 회원가입
 export const authRegister = async (userData) => {
